@@ -2,6 +2,7 @@ package com.tka.controller;
 
 import java.util.List;
 
+import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,8 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import com.tka.entity.Team;
 import com.tka.service.TeamService;
@@ -41,8 +40,15 @@ public class TeamController {
 		return "team";
 	}
 
-//	@GetMapping("/delete-match/{id}");
-//    public String deleteMatch() {
-//    	return null;
-//    }
+//	
+//	@GetMapping("/edit-Team/{id}")
+//public String editTeamById  (@PathVariable long id ) {
+//		Session session = sess
+//		return null;
+//		
+//		
+//	}
+//	
+//	
+	
 }

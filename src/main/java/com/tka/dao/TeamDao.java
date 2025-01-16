@@ -31,4 +31,6 @@ public class TeamDao {
         Criteria criteria = session.createCriteria(Team.class);
 		return criteria.list();
     }
+    
+    
 }

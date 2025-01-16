@@ -69,7 +69,7 @@ public class MatchController {
 	@PostMapping("/update-match")
 	public String updateMatch(@ModelAttribute Matches matches) {
 		System.err.println("In Update-Match controller:" + matches);
-		return "redirect:/all-matches";
+		return "update-match";
 
 	}
 
